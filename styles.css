@@ -1,0 +1,347 @@
+/* start now Section... */
+
+html,
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.get-started-section {
+  padding: 80px 20px;
+  background-color: #ffe6e6;
+}
+
+.ferris-wheel {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px 0px;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .text-start-md {
+    text-align: center !important;
+  }
+}
+
+/* our services Section... */
+
+.container {
+  max-width: 1100px;
+}
+
+.feature-card {
+  border-radius: 30px;
+  padding: 30px;
+  color: #000;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.bg-purple {
+  background-color: #dcd3ff;
+}
+
+.bg-pink {
+  background-color: #ffc8dc;
+}
+
+.bg-yellow {
+  background-color: #fff3a2;
+}
+
+.bg-green {
+  background-color: #d4f9b2;
+}
+
+.bg-orange {
+  background-color: #ffd6ac;
+}
+
+.bg-blue {
+  background-color: #b3e9ff;
+}
+
+h5 {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 0;
+  color: #444;
+}
+
+@media (max-width: 576px) {
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-icon {
+    width: 80px;
+  }
+}
+
+
+
+/* faq questions */
+
+.faq-section {
+  padding: 80px 0;
+  background:
+    linear-gradient(rgba(217, 241, 255, 0.9), rgba(217, 241, 255, 0.9)),
+    url("assets/services/1.webp") center/cover no-repeat;
+}
+
+.faq-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.faq-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.faq-answer {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #212529;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #343a40;
+}
+
+.faq-question span {
+  font-weight: 500;
+}
+
+.faq-question i {
+  font-size: 18px;
+}
+
+.faq-buttons {
+  margin-top: 40px;
+}
+
+.faq-buttons .btn {
+  border-radius: 50px;
+  padding: 12px 25px;
+}
+
+/* footer */
+main {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+  color: #495057;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 40px 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer h5 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer p,
+.footer ul {
+  color: #adb5bd;
+}
+
+.footer a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer a:hover {
+  color: #ff7f07;
+}
+
+.footer .social-icons a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+.footer .social-icons a:hover {
+  color: #ff7f07;
+}
+
+.footer .list-unstyled li {
+  margin-bottom: 8px;
+}
+
+footer .text-secondary {
+  color: #cccccc !important;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767.98px) {
+  .footer .col-md-4 {
+    margin-bottom: 30px;
+  }
+
+  .footer .col-md-4:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/* call now button */
+.assessment-section {
+  background-color: #d9f1ff;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.assessment-icon {
+  font-size: 50px;
+  color: #333;
+}
+
+.assessment-btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.assessment-btn:hover {
+  background-color: #333;
+  /* gray hover */
+  color: #fff;
+}
+
+
+/***********/
+/*Diwali */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.5rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #111;
+  position: relative;
+  left: -10px;
+}
+
+.nav-link {
+  color: #333;
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #f78720;
+}
+
+
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #eee;
+}
+
+.offcanvas .btn-close {
+  font-size: 1.2rem;
+}
+
+/* chat with whatsapp... */
+.whatsapp-chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 16px;
+  font-size: 16px;
+
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-chat-btn:hover {
+  background-color: #1ebc53;
+  text-decoration: none;
+}
+
+.whatsapp-chat-btn i {
+  font-size: 22px;
+}

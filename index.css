@@ -1,0 +1,413 @@
+/* index */
+
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #000;
+}
+
+.small-heading {
+  font-size: 0.95rem;
+  margin-top: 15px;
+  color: #000;
+}
+
+
+
+/* Boat */
+.boat {
+  position: absolute;
+  bottom: 50px;
+  left: -220px;
+  width: 150px;
+  animation: boatMove 10s linear infinite;
+  z-index: 5;
+}
+
+@keyframes boatMove {
+  0% {
+    left: -220px;
+    transform: rotate(0);
+  }
+
+  70% {
+    left: calc(100% - 300px);
+    transform: rotate(0);
+  }
+
+  80% {
+    left: calc(100% - 290px);
+    transform: rotate(-5deg);
+  }
+
+  90% {
+    left: calc(100% - 280px);
+    transform: rotate(5deg);
+  }
+
+  100% {
+    left: calc(100% - 270px);
+    transform: rotate(0);
+  }
+}
+
+/* Iceberg */
+.iceberg {
+  position: absolute;
+  bottom: 70px;
+  right: 80px;
+  width: 160px;
+  z-index: 3;
+}
+
+/* Waves */
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 140px;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+
+.wave-container svg {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 200%;
+  height: 140px;
+}
+
+.wave1 {
+  animation: waveMove 12s linear infinite;
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .small-heading {
+    font-size: 0.85rem;
+  }
+
+  .boat {
+    width: 100px;
+    bottom: 20px;
+    animation: boatMoveMobile 10s linear infinite;
+  }
+
+  @keyframes boatMoveMobile {
+    0% {
+      left: -120px;
+      transform: rotate(0);
+    }
+
+    70% {
+      left: calc(100% - 160px);
+      transform: rotate(0);
+    }
+
+    80% {
+      left: calc(100% - 150px);
+      transform: rotate(-5deg);
+    }
+
+    90% {
+      left: calc(100% - 140px);
+      transform: rotate(5deg);
+    }
+
+    100% {
+      left: calc(100% - 130px);
+      transform: rotate(0);
+    }
+  }
+
+  .iceberg {
+    width: 100px;
+    bottom: 35px;
+    right: 20px;
+  }
+
+  .wave-container,
+  .wave-container svg {
+    height: 80px;
+  }
+}
+
+
+/* what we serve*/
+
+.industry-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  color: #333;
+}
+
+/* Solid blue hover flow */
+.industry-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: #0d6efd;
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+
+.industry-card:hover::before {
+  left: 0;
+}
+
+.industry-card:hover {
+  color: #fff;
+  background: red;
+}
+
+.industry-card h5,
+.industry-card p {
+  position: relative;
+  z-index: 2;
+  color: inherit;
+}
+
+.industry-card .icon img {
+  height: 48px;
+  width: 48px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.industry-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon dancing animation */
+@keyframes dance {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-5px);
+  }
+
+  60% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.industry-card:hover .icon img {
+  animation: dance 0.6s ease;
+}
+
+/* Floating up-down animation */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.industry-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* Tab Content Styling */
+.tab-content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.industry-img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+
+
+/* Logo track container */
+.logo-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 15px 0;
+}
+
+/* Auto-scrolling flex track */
+.logo-track {
+  display: flex;
+  animation: scrollLoop 30s linear infinite;
+}
+
+/* Individual logo items */
+.logo-item {
+  flex: 0 0 auto;
+  padding: 0 35px;
+}
+
+.logo-item img {
+  height: 70px;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.logo-item img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Continuous seamless loop */
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.stat-card {
+  padding: 15px;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.stat-card i {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+img.illustration {
+  height: 220px;
+}
+
+h1.fw-bold {
+  font-size: 2rem;
+}
+
+p.text-muted {
+  font-size: 0.95rem;
+}
+
+/* marquee */
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: scroll-left 25s linear infinite;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.marquee-item i {
+  margin-right: 12px;
+  font-size: 26px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 576px) {
+  .marquee-item {
+    font-size: 16px;
+    margin-right: 40px;
+  }
+
+  .marquee-item i {
+    font-size: 20px;
+  }
+}
