@@ -40,7 +40,8 @@ Performance test on live website
 Tool used: pagespeed.web.dev
 
 platform  preformance  asscessability  best practices    seo
- 
+
+
 mobile    67            85              96               100
 Desktop   91            92              96               92
  
